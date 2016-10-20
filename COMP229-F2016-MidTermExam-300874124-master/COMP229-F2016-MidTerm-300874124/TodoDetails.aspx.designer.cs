@@ -13,15 +13,6 @@ namespace COMP229_F2016_MidTerm_300874124 {
     public partial class TodoDetails {
         
         /// <summary>
-        /// TodoIDTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TodoIDTextBox;
-        
-        /// <summary>
         /// TodoDescriptionTextBox control.
         /// </summary>
         /// <remarks>
@@ -38,15 +29,6 @@ namespace COMP229_F2016_MidTerm_300874124 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TodoNotesTextBox;
-        
-        /// <summary>
-        /// CompletedTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CompletedTextBox;
         
         /// <summary>
         /// CancelButton control.

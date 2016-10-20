@@ -14,7 +14,7 @@
                     CssClass="table table-bordered table-striped table-hover" DataKeyNames="TodoID"
                     OnRowDeleting="TodosGridView_RowDeleting">
                     <Columns>
-                        <asp:BoundField DataField="TodoID" HeaderText="Todo ID" Visible="true" />
+                        
                         <asp:BoundField DataField="TodoDescription" HeaderText="Todo Description" Visible="true" />
                         <asp:BoundField DataField="TodoNotes" HeaderText="Todo Notes" Visible="true" />
                         <asp:BoundField DataField="Completed" HeaderText="Completed" Visible="true"/>
@@ -22,8 +22,10 @@
                         <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete"
                             ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
 
-                        <asp:CommandField HeaderText="Edit" EditText="<i class='fa fa-trash-o fa-lg'></i> Edit"
-                            ShowEditButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
+                       <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit"
+                            NavigateUrl="/TodoDetails.aspx.cs" ControlStyle-CssClass="btn btn-primary btn-sm"
+                            runat="server" DataNavigateUrlFields="TodoID"
+                            DataNavigateUrlFormatString="TodoDetails.aspx?TodoID={0}" />
 
                     </Columns>
                 </asp:GridView>
