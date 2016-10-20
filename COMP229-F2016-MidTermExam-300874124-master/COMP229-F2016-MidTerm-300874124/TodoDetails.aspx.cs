@@ -13,5 +13,15 @@ namespace COMP229_F2016_MidTerm_300874124
         {
 
         }
+
+        protected void SaveButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void CancelButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
